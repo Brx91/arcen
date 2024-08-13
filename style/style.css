@@ -1,0 +1,208 @@
+/* Resets */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+/* Fin Reset */
+
+/* Fondo De pantalla del body general */
+body {
+    background-image: url(../source/brushed_alu.webp);
+    background-color: rgb(172, 165, 165);
+}
+
+/* Contenedor */
+.container {
+    background-color: rgb(104, 104, 175);
+    display: flex;
+    width: 100%;
+    padding: 1em;
+    height: auto;
+}
+
+/* Logo*/
+
+.logo {
+    width: 40%;
+}
+
+.logo img {
+    width: 200px;
+}
+/* Barra de Navegacion*/
+.navbar {
+    width: 100%;
+    display: flex;
+    
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    
+}
+
+.navbar ul li {
+    margin: 5px;
+    margin-top: auto;
+    
+}
+
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+} 
+/* Animacion del navbar */
+.navbar ul li a:hover {
+    font-size: 18px;
+    transition: 0.4s;
+}
+/* Cuerpo de pagina index */
+main {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.video {
+    height: 80%;  
+}
+
+/* Parte Inferior Index Contenedor imagen y palabras*/
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.content img {
+    width: 60%;
+    height: 25em;
+    box-shadow: 10px 10px 5px rgb(104, 104, 175);
+    object-fit: cover;
+}
+
+iframe {
+    box-shadow: 10px 10px 5px rgb(104, 104, 175);
+}
+
+/* Fin de contenedor imagen y palabras*/
+
+/* Linea HR */
+hr {
+    border: 3px solid black;
+}
+
+/* Pie de Pagina */
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+/* Seccion Contacto */
+
+.cont {
+    display: flex;
+    justify-content: center;
+    font-size: 5em;
+}
+
+.contacto {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    padding-top: 30px;
+    flex-wrap: wrap;
+}
+
+.contacto .imagenes {
+    width: 15em;
+    height: 15em;
+}
+
+/* Formulario de contacto */
+.cont-form {
+	display: flex;
+	justify-content: center;
+}
+
+.formulario {
+	margin: 20px;
+}
+
+input {
+	margin: 20px;
+	width: 30em;
+	padding: 10px;
+}
+
+textarea {
+	margin: 20px;
+	width: 30em;
+	height: 30vh;
+	
+}
+
+form button {
+	width: 33em;
+	background-color: rgba(40, 40, 170, 0.873);
+	padding: 10px;
+	border-radius: 5px;
+}
+
+form button:hover {
+	background-color: rgba(46, 46, 209, 0.958);
+    color: white;
+}
+
+/* Fin de formulario */
+
+/* Grids trabajos */
+
+.grid-img {
+    width: 343px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    
+}
+
+@media (min-width:100px){
+    .grid-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (min-width:520px){
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width:728px){
+    .grid-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width:1024px){
+    .grid-container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+/* Fin grids */
+
+.gallery {
+    display: flex;
+    gap: 4px;
+}
