@@ -201,8 +201,3 @@ form button:hover {
     }
 }
 /* Fin grids */
-
-.gallery {
-    display: flex;
-    gap: 4px;
-}
