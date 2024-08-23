@@ -90,6 +90,21 @@ main {
     object-fit: cover;
 }
 
+.p_index{
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    padding: 10%;
+}
+
+
+@media (max-width: 520px){
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 iframe {
     box-shadow: 10px 10px 5px rgb(104, 104, 175);
 }
