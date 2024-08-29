@@ -1,0 +1,55 @@
+.cont {
+    @include flexjustify;
+    font-size: 3rem;
+}
+.contacto {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    padding-top: 30px;
+    flex-wrap: wrap;
+
+.imagenes {
+    width: 15em;
+    height: 15em;
+}
+}
+
+/* Formulario de contacto */
+.cont-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  
+  .formulario {
+    margin: 20px;
+}
+  
+  input {
+    margin: 20px;
+    width: 30em;
+    padding: 10px;
+  }
+  
+  textarea {
+    margin: 20px;
+    width: 30em;
+    height: 30vh;
+  }
+  
+  form button {
+    width: 100%;
+    background-color: $color-sombra;
+    padding: 10px;
+    border-radius: 5px;
+
+         &:hover {
+            background-color: rgba(46, 46, 209, 0.958);
+            color: white;
+  }
+}
+}
+
+
+  /* Fin de formulario */

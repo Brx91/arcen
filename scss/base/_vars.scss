@@ -1,0 +1,15 @@
+
+$color-sombra: rgb(104, 104, 175);
+
+
+
+@mixin flexjustify {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin sombra {
+    box-shadow: 10px 10px 5px $color-sombra;
+}
+

@@ -1,0 +1,74 @@
+//resets y estilos generales
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+body {
+    background-image: url(../source/brushed_alu.webp);
+    background-color: rgb(172, 165, 165);
+}
+
+.content {
+    @include flexjustify;
+    margin: 10px;
+    padding: 10px;
+    gap: 10px;
+
+    img {
+         width: 60%;
+         height: 25em;
+         @include sombra;
+         object-fit: cover;
+}
+}
+
+hr {
+    border: 3px solid black;
+}
+
+.cont {
+    @include flexjustify;
+    font-size: 3rem;
+    animation: titulos 2000ms
+    steps(14, end) forwards 1000ms;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    width: 0;
+    height: auto;
+    border-right: 2px solid #ffffff;
+}
+
+
+.cont:nth-of-type(2) {
+    height: 0;
+    animation-delay: 3100ms;
+}
+
+.cont:nth-of-type(3) {
+    height: 0;
+    animation-delay: 5200ms;
+}
+
+@keyframes titulos {
+    0% {
+        border-width: 2px;
+    }
+    5% {
+       width: 0;
+       height: auto;
+       border-width: 2px; 
+    }
+    93% {
+        border-width: 2px;
+    }
+    100% {
+        width: 100%;
+        height: auto;
+        border-width: 0;
+    }
+}
+

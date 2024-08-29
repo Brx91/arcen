@@ -1,0 +1,33 @@
+//logo
+.logo {
+    width: 40%;
+   img {
+    width: 200px;
+  }
+}
+  
+  //barra de navegacion
+  .navbar {
+    width: 100%;
+    display: flex;
+     ul {
+       display: flex;
+       list-style-type: none;
+  }
+  
+      li {
+       margin: 5px;
+         margin-top: auto;
+  }
+  
+        a {
+         color: white;
+          text-decoration: none;
+  }
+  
+  //hover
+  &:hover {
+    font-size: 18px;
+    transition: 0.4s;
+  }
+}

@@ -1,0 +1,21 @@
+//grid galeria
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    .grid-item {
+        &:hover {
+            transform: scale(1.1);
+            transition: 0.3s;
+        }
+    }
+    img {
+        width: 343px;
+        height: 300px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+   
+}
+

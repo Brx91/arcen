@@ -1,0 +1,9 @@
+/* Cuerpo de pagina index */
+main {
+    padding: 10px;
+    @include flexjustify;
+.video {
+    height: 80%; 
+    @include sombra;
+}
+}
