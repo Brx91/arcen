@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Quicksand", sans-serif;
+    overflow-x: hidden;
 }
 body {
     background-image: url(../source/brushed_alu.webp);
@@ -17,7 +18,7 @@ body {
     padding: 10px;
     gap: 10px;
 
-    img {
+    .img-index {
          width: 60%;
          height: 25em;
          @include sombra;
@@ -32,7 +33,7 @@ hr {
 .cont {
     @include flexjustify;
     font-size: 3rem;
-    animation: titulos 2000ms
+    animation: titulos 1000ms
     steps(14, end) forwards 1000ms;
     overflow: hidden;
     padding: 0;
@@ -45,12 +46,12 @@ hr {
 
 .cont:nth-of-type(2) {
     height: 0;
-    animation-delay: 3100ms;
+    animation-delay: 1550ms;
 }
 
 .cont:nth-of-type(3) {
     height: 0;
-    animation-delay: 5200ms;
+    animation-delay: 2600ms;
 }
 
 @keyframes titulos {
@@ -71,4 +72,3 @@ hr {
         border-width: 0;
     }
 }
-

@@ -3,7 +3,25 @@
     .content {
         display: flex;
         flex-direction: column;
+        
     }
+}
+
+@media (min-width: 520px) and (max-width: 1024px){
+    .content {
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
 }
 
 

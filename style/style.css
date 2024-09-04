@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
+  overflow-x: hidden;
 }
 
 body {
@@ -18,7 +19,7 @@ body {
   padding: 10px;
   gap: 10px;
 }
-.content img {
+.content .img-index {
   width: 60%;
   height: 25em;
   box-shadow: 10px 10px 5px rgb(104, 104, 175);
@@ -34,7 +35,7 @@ hr {
   justify-content: center;
   align-items: center;
   font-size: 3rem;
-  animation: titulos 2000ms steps(14, end) forwards 1000ms;
+  animation: titulos 1000ms steps(14, end) forwards 1000ms;
   overflow: hidden;
   padding: 0;
   margin: 0;
@@ -45,12 +46,12 @@ hr {
 
 .cont:nth-of-type(2) {
   height: 0;
-  animation-delay: 3100ms;
+  animation-delay: 1550ms;
 }
 
 .cont:nth-of-type(3) {
   height: 0;
-  animation-delay: 5200ms;
+  animation-delay: 2600ms;
 }
 
 @keyframes titulos {
@@ -72,10 +73,10 @@ hr {
   }
 }
 .logo {
-  width: 40%;
+  width: 50%;
 }
 .logo img {
-  width: 200px;
+  max-width: 200px;
 }
 
 .navbar {
@@ -94,7 +95,7 @@ hr {
   color: white;
   text-decoration: none;
 }
-.navbar:hover {
+.navbar a:hover {
   font-size: 18px;
   transition: 0.4s;
 }
@@ -110,13 +111,13 @@ hr {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  padding: 10px;
+  gap: 5em;
   padding-top: 30px;
   flex-wrap: wrap;
 }
 .contacto .imagenes {
-  width: 15em;
-  height: 15em;
+  width: 10em;
+  height: 10em;
 }
 
 /* Formulario de contacto */
@@ -147,6 +148,11 @@ hr {
 .cont-form form button:hover {
   background-color: rgba(46, 46, 209, 0.958);
   color: white;
+}
+
+fieldset {
+  border: 2px solid white;
+  box-shadow: 0 0 10px white;
 }
 
 /* Fin de formulario */
@@ -184,6 +190,10 @@ main .video {
   box-shadow: 10px 10px 5px rgb(104, 104, 175);
 }
 
+.content p {
+  text-align: justify;
+}
+
 iframe {
   box-shadow: 10px 10px 5px rgb(104, 104, 175);
 }
@@ -192,6 +202,19 @@ iframe {
   .content {
     display: flex;
     flex-direction: column;
+  }
+}
+@media (min-width: 520px) and (max-width: 1024px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 520px) {
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media (min-width: 100px) {

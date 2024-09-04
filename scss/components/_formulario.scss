@@ -6,13 +6,13 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
-    padding: 10px;
+    gap: 5em;
     padding-top: 30px;
     flex-wrap: wrap;
 
 .imagenes {
-    width: 15em;
-    height: 15em;
+    width: 10em;
+    height: 10em;
 }
 }
 
@@ -21,6 +21,7 @@
     display: flex;
     justify-content: center;
     gap: 10px;
+    
   
   .formulario {
     margin: 20px;
@@ -49,6 +50,11 @@
             color: white;
   }
 }
+}
+
+fieldset {
+  border: 2px solid white;
+  box-shadow: 0 0 10px white;
 }
 
 

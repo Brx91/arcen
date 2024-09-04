@@ -1,8 +1,8 @@
 //logo
 .logo {
-    width: 40%;
+    width: 50%;
    img {
-    width: 200px;
+    max-width: 200px;
   }
 }
   
@@ -23,11 +23,12 @@
         a {
          color: white;
           text-decoration: none;
-  }
+  
   
   //hover
   &:hover {
     font-size: 18px;
     transition: 0.4s;
   }
+}
 }
