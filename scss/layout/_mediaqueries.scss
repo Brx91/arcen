@@ -24,6 +24,19 @@
     
 }
 
+@media screen and (max-width: 520px) {
+    .cont-form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        button {
+            width: 200px;
+            justify-content: center;
+        }
+    }
+    
+}
+
 
 @media (min-width:100px){
     .grid-container{
@@ -37,7 +50,7 @@
 }
 @media (min-width:728px){
     .grid-container{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 @media (min-width:1024px){
