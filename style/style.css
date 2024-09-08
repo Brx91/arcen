@@ -168,11 +168,11 @@ footer {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 5px;
+  gap: 10px;
 }
 .grid-container .grid-item:hover {
-  transform: scale(1.1);
-  transition: 0.3s;
+  transform: scaleX(1.1);
+  transition: 0.4s;
 }
 .grid-container img {
   width: 343px;
